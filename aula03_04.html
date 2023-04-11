@@ -1,0 +1,43 @@
+<?php
+$texto = $_POST['texto'];
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site do Otávio</title>
+    <style>
+        h1,h2{
+            text-align:center;            
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id ="cabecalho" style="background-color: #FFFFF0"><h1>CADASTRO PESSOAL - OTÁVIO</h1></div>
+
+        <div id="coluna1" style="background-color: ; display:inline-block;">
+             <ul>
+                <li><a href="aula03_04pagina1.html">Cadastro Residêncial</a></li>
+                <li><a href="aula03_04pagina2.html">Cadastro Empresarial</a></li>
+            </ul>
+            <h2>DIGITE SEU NOMEㅤ</H2>
+        </div>
+        <br>
+        <div id="coluna2" style="background-color: ; display:inline-block;">
+            <form action="" method="post">
+                <input type="text" name="texto" id="texto" style="backgorund-color: ;"><br><br><button type="submit"; style="background-color: ;">enviar</button><br><br>
+            </form>
+        </div>
+        </br>
+        <div id="coluna3" style="background-color: ; display:inline-block;">
+            <div><h2>Nome regitsrado:ㅤ</h2><?php echo $texto?></div>
+        </div>
+    </div>            
+
+
+</body>
+</html>

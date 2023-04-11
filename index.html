@@ -1,0 +1,84 @@
+<?php
+$texto = $_POST['texto'];
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site do Otávio</title>
+    <style>
+    h1,h2{
+        text-align:center;            
+    }
+    .coluna1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F5F5DC;
+    }
+    .colunas{
+        display: flex;
+        flex: 1;
+        justify-content: space-around; 
+    }
+    .coluna{
+        flex: 1;
+        height: auto;
+        padding: 10px;
+    }
+    .menu{
+        width:300px;
+    }
+    li {
+        list-style-type: none;
+        border: 1px solid black;
+        margin: 5px 5px 5px -15px;
+        background-color: #F0F8FF;
+        cursor: pointer;
+        padding: 5px;
+    }
+    li:hover  {list-style-type: none;
+        border: 1px solid black;
+        margin: 5px 5px 5px -15px;
+        background-color: #87CEFA;
+        cursor: pointer;
+        padding: 5px;
+    }
+    .banner {
+        image align:right;
+    }
+    .text{
+        padding: 10px;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id ="cabecalho" style="background-color: #FFFFF0"><h1>Lista de Atividades - OTÁVIO 2° Ano</h1></div>
+        
+        <div id ="cabecalho2" style="background-color: #FFFFF0"></div>
+
+        <div id="coluna1" style="background-color: #F8F8FF; display:inline-block;">
+            <div class="colunas">
+                <div class="coluna">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="aula03_04.html">Atividade da Aula 03/04/23</a></li>
+                            <li><a href="aula04_04.html">Atividade da Aula 04/04/23</a></li>
+                            <li><a href="ferrari.mp4">Atividade da Aula 11/04/23 - Video</a></li>
+                        </ul>
+                    </div><!-- fim div menu -->
+            </div><!-- fim div coluna1 --> 
+                        <div class="text"><p>← Ao lado está todas as minhas atividades.ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</p></div class="text">
+                        <div class="banner"><h1><img src="carrf1.gif"></div class="banner"></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
