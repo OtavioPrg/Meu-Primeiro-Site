@@ -9,18 +9,15 @@
     body{
       font-family: Segoe UI;
       margin: 0;
-      width: 100vw;
-      height: 100vh;
+      width: 97vw;
+      height: 135vh;
       background: linear-gradient(to bottom right, 	#FFC1C1, #FF6A6A);
     }
     h1{
       text-align:center; 
       color: black;
       text-shadow: 0 0 0.2em #FFFACD;
-      font-family: 'Montserrat', sans-serif;
-    }
-    h2{
-      text-align:center;         
+      font-family: 'Montserrat', sans-serif;    
     }
     header {
       background-size: cover;
@@ -28,12 +25,10 @@
       margin-top: 0;
       margin: 0;
       display: flex;
-      align-items: center;
       flex-wrap: wrap;
-      justify-content: center;
+      align-items: top;
     }
     nav {
-        background-color: #FFFAF080;
         color: #fff;
         width: 260px;
         height: 460px;
@@ -64,8 +59,11 @@
       text-align: right;
     }
 	  .cabecalho{
-		background-color: #88ffeb8d;
+    background: linear-gradient(to bottom right, 	#ffb1ccac, #ff076ac9);
+    border-style:solid;
+    border-color: #ff000080;
     margin-top: 10px;
+    margin-bottom: -10px;
     width: 350px;
     height: 70px;       
     display: flex;
@@ -74,51 +72,73 @@
     border-radius: 10px;
 	  }
     .coluna1 {
+    justify-content: left;
     background-color: #FFFAF080;
     border-radius: 10px;
-	  border-style: dotted;
-	  border-color: #FF00FF;
+    border-style:solid;
+    border-color: #ff000080;
     margin-bottom: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 	  width: 300px;
 	  right: 200px;
-	  height: 500px;
+	  height: 400px;
 	  }
 	  .coluna2 {
+      justify-content: center;
       background-color: #FFFAF080;
       border-radius: 10px;
-      border-style: dotted;
-      border-color: #FF00FF;
+      border-style:solid;
+      border-color: #ff000080;
       margin-bottom: 0;
-      margin: 10px;
+      margin-right:10px;
+      margin-left:10px;
       font-family: 'Montserrat', sans-serif;
       width: 500px;
       right: 200px;
-      height: 500px;
+      height: 1500px;
 	  }
+    .coluna2 h2{
+      font-size: 15px;
+      text-align:justify;
+      margin: 10px; 
+    }
+    .coluna2 h3{
+      font-size: 20px;
+      text-align:justify;
+      margin: 10px; 
+    }
+    .coluna2 video{
+      display: flex;
+      margin-left: 25px;
+      margin-top: -60px;
+      margin-bottom: -90px;
+      width: 450px;
+      height: 450px;
+    }
     .div-cabecalho{
       display: flex;
       align-items: center;
       justify-content: center;
     }
 	  .coluna3 {
+      display: flex;
+      justify-content: right;
       align-items: center;
+      justify-content: center;
       background-color: #FFFAF080;
       border-radius: 10px;
-      border-style: dotted;
-      border-color: #FF00FF;
-      align-items:end !important;
-      margin-bottom: 0;
-      margin: 0;
+      border-style:solid;
+      border-color: #ff000080;
+      margin-bottom: 0px;
+      margin-top: 0px;
       font-family: 'Montserrat', sans-serif;
       width: 250px;
       right: 200px;
-      height: 500px;
+      height: 445px;
     }
     button {
       margin-top:10px;
-      opacity: 1.0;
       background-color: #ff8787;
       color: #fff;
       padding: 10px 20px;
@@ -126,20 +146,43 @@
       border-radius: 50px;
       cursor: pointer;
     }
+    button:hover{
+      padding-inline: 30px;
+    }
     .formulario1{
-      background: linear-gradient(to bottom right, 	#fef0f0, #0f0f0f);
+      background: linear-gradient(to bottom right, 	#fef0f080, #09090940);
       border-radius: 5px;
-      margin: 0 auto;
+      padding: 10px;
+      width: 200px;
     }
     .formulario2{
-      background: linear-gradient(to bottom right, 	#ffffff, #090909);
+      background: linear-gradient(to bottom right, 	#ffffff80, #09090940);
       border-radius: 5px;
-      margin: 0 auto;
+      padding: 10px;
+      margin-top: 10px;
+      width: 200px;
     }
     .formulario3{
-      background: linear-gradient(to bottom right, 	#030303, #ffffff);
+      background: linear-gradient(to bottom right, #ffffff80, #09090940);
       border-radius: 5px;
-      margin: 0 auto;
+      margin-top: 10px;
+      padding: 10px;
+      height: 110px;
+      width: 200px;
+    }
+    .coluna3 h1{
+      font-size: 20px;
+      margin-top: 15px;
+      margin-bottom: 20px;
+      text-align:center; 
+      color: black;
+      text-shadow: 0 0 0.2em #FFFACD;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .coluna3 h2{
+      font-size: 15px;
+      font-family: 'Montserrat', sans-serif;
+      text-align:center;     
     }
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -154,35 +197,56 @@
       </div>
     </div>
 		<header>
-			<div class="coluna1">
-                <nav>
-                    <ul>
-                      <li><a href="index.html">Minha lista de Atividades</a></li>
-                      <li><a href="#">Item 2</a></li>
-                      <li><a href="#">Item 3</a></li>
-                    </ul>
-                </nav>
-			</div>
-			<div class="coluna2"><h1>ㅤcoluna2ㅤ</h1></div>
-
-			<div class="coluna3">
-				<h1>Seus Dados</h1>
-        <div class="formulario1">
-          <div class="col-3" style="text-align: center;">
-            <form action="" method="post">
-                    digite seu nome:<input type="text" name="texto" id="texto"><br><br><br>
+        <div class="coluna1">
+          <nav>
+              <ul>
+                <li><a href="index.html">Minha lista de Atividades</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+              </ul>
+          </nav>
+        </div>
+        <div class="coluna2"><h1>A Fórmula 1 e a Tecnologia</h1>
+          <h2>A fórmula 1 nunca foi só apice do automobilismo, sempre foi considerada um laboratório de inovações e 
+          tecnologias, que depois de um tempo sendo testadas nela, vão parar no carros de rua. Aqui vamos citar 
+          tecnologias que provavelmente você usa no seu carro,
+          mas veio da Fórmula 1.</h2>
+          <video src="f1tec.WebM"autoplay></video>
+          <br><h3>Freios melhores</h3><h2><br>Discos de freios, muito mais eficientes do que o sistema por 
+          tambor, são herança da Fórmula 1. Atualmente, os discos são feitos de fibra de carbono para as 
+          corridas -- material que ainda é muito caro para carros populares, mas se espalham pelo portfólio de 
+          esportivos de luxo, em compostos de carbono-cerâmica. Por ora, o aço deve ser manter como o material 
+          usado. Além disso, sistemas como o ABS, que evita o travamento das rodas, e o controle de tração também 
+          vieram das pistas.</h2><br><h3>Motorização Eficiente</h3><h2>Os motores usados na Fórmula 1 são muito 
+          exigidos e precisam trabalhar em altas temperaturas. Para não terem problemas no funcionamento, 
+          precisam usar materiais de alta resistência, como alumínio e titânio. Apesar de o titânio ter um uso 
+          mais restrito no carros comuns, o alumínio já é bastante utilizado. Outro recurso originário das pistas 
+          é o desenvolvimento dos turbocompressores, que aumentam a eficiência na queima de combustível e vêm se 
+          popularizando nos últimos anos. Por fim, se é possível dar a partida no motor do seu carro apenas 
+          apertando um botão em vez de girar a chave na ignição, agradeça à F1.</h2>
+        </div>
+        <div class="coluna3">
+            <form action="" method="post">  
+              <h1>Seus Dados</h1>
+              <div class="formulario1">
+                <div class="col-3" style="text-align: center;">
+                    <h2>Digite seu nome:</h2><input type="text" name="texto" id="texto">
                 </div>
+              <br>
+              </div>
               <div class="formulario2">
-                <div class="col-3" style="text-align: center;">
-                  digite seu gmail:<input type="text" name="texto" id="texto"><br><br><br>
-                </div>
+                  <div class="col-3" style="text-align: center;">
+                    <h2>Digite seu gmail:</h2><input type="text" name="texto" id="texto">
+                  </div>
+                  <br>
+              </div>
               <div class="formulario3">
-                <div class="col-3" style="text-align: center;">
-                  Envie uma mensagem:<input type="text" name="texto" id="texto"><br><button type="submit"; style="background-color: white;">enviar</button><br><br>
-                </div>
+                  <div class="col-3" style="text-align: center;">
+                    <h2>Envie uma mensagem:</h2><input type="text" name="texto" id="texto"><br><button type="submit">enviar</button>
+                  </div>
+              </div>
             </form>
-          </div>
-			</div>
+        </div>
 		</header>
   </main>
 </body>
