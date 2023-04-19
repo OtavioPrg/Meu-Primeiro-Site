@@ -46,7 +46,7 @@
       list-style-type: none;
       padding: 0;
       margin: 0;
-      margin top: 10px;
+      margin-top: 10px;
       color: white;
     }
     nav li {
@@ -57,12 +57,11 @@
       color: rgb(0, 0, 0) !important;
       text-decoration: none;
       font-size: 20px;
-      margin
     }
     img{
       width: 500px;
       border-radius: 10px;
-      text align: right;
+      text-align: right;
     }
 	  .cabecalho{
 		background-color: #88ffeb8d;
@@ -94,7 +93,7 @@
       margin-bottom: 0;
       margin: 10px;
       font-family: 'Montserrat', sans-serif;
-      width: 600px;
+      width: 500px;
       right: 200px;
       height: 500px;
 	  }
@@ -104,6 +103,7 @@
       justify-content: center;
     }
 	  .coluna3 {
+      align-items: center;
       background-color: #FFFAF080;
       border-radius: 10px;
       border-style: dotted;
@@ -112,9 +112,34 @@
       margin-bottom: 0;
       margin: 0;
       font-family: 'Montserrat', sans-serif;
-      width: 400px;
+      width: 250px;
       right: 200px;
       height: 500px;
+    }
+    button {
+      margin-top:10px;
+      opacity: 1.0;
+      background-color: #ff8787;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+    .formulario1{
+      background: linear-gradient(to bottom right, 	#fef0f0, #0f0f0f);
+      border-radius: 5px;
+      margin: 0 auto;
+    }
+    .formulario2{
+      background: linear-gradient(to bottom right, 	#ffffff, #090909);
+      border-radius: 5px;
+      margin: 0 auto;
+    }
+    .formulario3{
+      background: linear-gradient(to bottom right, 	#030303, #ffffff);
+      border-radius: 5px;
+      margin: 0 auto;
     }
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -139,20 +164,24 @@
                 </nav>
 			</div>
 			<div class="coluna2"><h1>ㅤcoluna2ㅤ</h1></div>
+
 			<div class="coluna3">
-				<h1>ㅤcoluna3ㅤ</h1>
-				ㅤdigite seu nome:
-				<form action="" method="post">
-                	<input type="text" name="texto" id="texto" style="backgorund-color: ;"><button type="submit"; style="background-color: ;">enviar</button><br><br>
-        </form>
-				ㅤdigite seu gmail:
-				<form action="" method="post">
-                	<input type="text" name="texto" id="texto" style="backgorund-color: ;"><button type="submit"; style="background-color: ;">enviar</button><br><br>
-        </form>
-				ㅤdigite sua mensagem:
-				<form action="" method="post">
-                	<input type="text" name="texto" id="texto" style="backgorund-color: ;"><button type="submit"; style="background-color: ;">enviar</button><br><br>
-        </form>
+				<h1>Seus Dados</h1>
+        <div class="formulario1">
+          <div class="col-3" style="text-align: center;">
+            <form action="" method="post">
+                    digite seu nome:<input type="text" name="texto" id="texto"><br><br><br>
+                </div>
+              <div class="formulario2">
+                <div class="col-3" style="text-align: center;">
+                  digite seu gmail:<input type="text" name="texto" id="texto"><br><br><br>
+                </div>
+              <div class="formulario3">
+                <div class="col-3" style="text-align: center;">
+                  Envie uma mensagem:<input type="text" name="texto" id="texto"><br><button type="submit"; style="background-color: white;">enviar</button><br><br>
+                </div>
+            </form>
+          </div>
 			</div>
 		</header>
   </main>
