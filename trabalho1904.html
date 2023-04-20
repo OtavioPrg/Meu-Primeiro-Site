@@ -9,14 +9,14 @@
     body{
       font-family: Segoe UI;
       margin: 0;
-      width: 97vw;
-      height: 135vh;
-      background: linear-gradient(to bottom right, 	#FFC1C1, #FF6A6A);
+      width: auto;
+      height: auto;
+      background: linear-gradient(to bottom right, 	#1D1D1D, whitesmoke);
+
     }
     h1{
       text-align:center; 
       color: black;
-      text-shadow: 0 0 0.2em #FFFACD;
       font-family: 'Montserrat', sans-serif;    
     }
     header {
@@ -30,9 +30,9 @@
     }
     nav {
         color: #fff;
-        width: 260px;
-        height: 460px;
-        border-radius: 8px;
+        margin-top: -10px !important;
+        width: auto;
+        height: auto;
         top: 0;
         left: 0;
         padding: 20px;
@@ -45,13 +45,16 @@
       color: white;
     }
     nav li {
-      margin-bottom: 10px;
+      font-size: 20px;
+      margin-bottom: 15px;
       color: white;
     }
+    nav li:hover{
+      padding-inline: 5px;
+    }
     nav a {
-      color: rgb(0, 0, 0) !important;
+      color: rgb(255, 255, 255);
       text-decoration: none;
-      font-size: 20px;
     }
     img{
       width: 500px;
@@ -59,9 +62,7 @@
       text-align: right;
     }
 	  .cabecalho{
-    background: linear-gradient(to bottom right, 	#ffb1ccac, #ff076ac9);
-    border-style:solid;
-    border-color: #ff000080;
+    background-color: rgba(245, 245, 245, 0.479);
     margin-top: 10px;
     margin-bottom: -10px;
     width: 350px;
@@ -72,31 +73,29 @@
     border-radius: 10px;
 	  }
     .coluna1 {
-    justify-content: left;
-    background-color: #FFFAF080;
-    border-radius: 10px;
-    border-style:solid;
-    border-color: #ff000080;
-    margin-bottom: 0;
-    margin: 0;
     font-family: 'Montserrat', sans-serif;
-	  width: 300px;
+    border-style: solid;
+    border-color: #ff6a6a00;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left:0px;
+    margin:0px;
+	  width: 200px;
 	  right: 200px;
-	  height: 400px;
+	  height: 150px;
 	  }
 	  .coluna2 {
       justify-content: center;
-      background-color: #FFFAF080;
+      align-items: center;
+      background-color: #ffffff78;
       border-radius: 10px;
-      border-style:solid;
-      border-color: #ff000080;
-      margin-bottom: 0;
-      margin-right:10px;
-      margin-left:10px;
+      margin-left: auto;
+      margin-right: auto;
       font-family: 'Montserrat', sans-serif;
-      width: 500px;
+      width: 850px;
       right: 200px;
-      height: 1500px;
+      height: 1720px;
 	  }
     .coluna2 h2{
       font-size: 15px;
@@ -104,17 +103,25 @@
       margin: 10px; 
     }
     .coluna2 h3{
+      text-align: center;
       font-size: 20px;
-      text-align:justify;
       margin: 10px; 
+    }
+    .coluna2 img{
+      align-items: center;
+      display:flex;
+      margin:auto;
+      border-radius: 5px;
+      width: 590px;
+      height: 370px;
     }
     .coluna2 video{
       display: flex;
-      margin-left: 25px;
-      margin-top: -60px;
-      margin-bottom: -90px;
-      width: 450px;
-      height: 450px;
+      margin:auto;
+      margin-bottom: -20px;
+      width: 600px;
+      height: 400px;
+      border-radius: 10px;
     }
     .div-cabecalho{
       display: flex;
@@ -123,19 +130,19 @@
     }
 	  .coluna3 {
       display: flex;
-      justify-content: right;
-      align-items: center;
-      justify-content: center;
-      background-color: #FFFAF080;
-      border-radius: 10px;
-      border-style:solid;
-      border-color: #ff000080;
-      margin-bottom: 0px;
-      margin-top: 0px;
+      position: absolute;
+      right: 0px;
+      margin:0;
       font-family: 'Montserrat', sans-serif;
-      width: 250px;
-      right: 200px;
-      height: 445px;
+      width: 200px;
+      height: 483px;
+    }
+    .coluna3 input{
+      margin:auto;
+      width: 140px;
+      height:15px;
+      border-radius: 10px;
+      border-color: #FF6A6A;
     }
     button {
       margin-top:10px;
@@ -150,39 +157,48 @@
       padding-inline: 30px;
     }
     .formulario1{
-      background: linear-gradient(to bottom right, 	#fef0f080, #09090940);
+      background-color: rgba(245, 245, 245, 0.479); 
       border-radius: 5px;
+      margin: auto;
       padding: 10px;
-      width: 200px;
+      width: 153px;
     }
     .formulario2{
-      background: linear-gradient(to bottom right, 	#ffffff80, #09090940);
+      background-color: rgba(245, 245, 245, 0.479); 
       border-radius: 5px;
       padding: 10px;
-      margin-top: 10px;
-      width: 200px;
+      margin: auto;
+      margin-top: 10px !important;
+      width: 153px;
     }
     .formulario3{
-      background: linear-gradient(to bottom right, #ffffff80, #09090940);
+      background-color: rgba(245, 245, 245, 0.479); 
       border-radius: 5px;
-      margin-top: 10px;
+      margin: auto;
+      margin-top: 10px !important;
       padding: 10px;
       height: 110px;
-      width: 200px;
+      width: 153px;
     }
     .coluna3 h1{
-      font-size: 20px;
+      font-size: 17px;
       margin-top: 15px;
       margin-bottom: 20px;
       text-align:center; 
-      color: black;
-      text-shadow: 0 0 0.2em #FFFACD;
+      color: black; 
       font-family: 'Montserrat', sans-serif;
     }
     .coluna3 h2{
       font-size: 15px;
       font-family: 'Montserrat', sans-serif;
       text-align:center;     
+    }
+    footer{
+      background-color: #7f7f7f;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      color:rgb(255, 255, 255)
     }
   </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -201,7 +217,7 @@
           <nav>
               <ul>
                 <li><a href="index.html">Minha lista de Atividades</a></li>
-                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Feedbacks</a></li>
                 <li><a href="#">Item 3</a></li>
               </ul>
           </nav>
@@ -211,23 +227,28 @@
           tecnologias, que depois de um tempo sendo testadas nela, vão parar no carros de rua. Aqui vamos citar 
           tecnologias que provavelmente você usa no seu carro,
           mas veio da Fórmula 1.</h2>
-          <video src="f1tec.WebM"autoplay></video>
-          <br><h3>Freios melhores</h3><h2><br>Discos de freios, muito mais eficientes do que o sistema por 
+          <video muted loop src="f1tec.WebM"autoplay></video>
+          <br><h3>Freios melhores</h3>
+          <h2><br>Discos de freios, muito mais eficientes do que o sistema por 
           tambor, são herança da Fórmula 1. Atualmente, os discos são feitos de fibra de carbono para as 
           corridas -- material que ainda é muito caro para carros populares, mas se espalham pelo portfólio de 
           esportivos de luxo, em compostos de carbono-cerâmica. Por ora, o aço deve ser manter como o material 
           usado. Além disso, sistemas como o ABS, que evita o travamento das rodas, e o controle de tração também 
-          vieram das pistas.</h2><br><h3>Motorização Eficiente</h3><h2>Os motores usados na Fórmula 1 são muito 
+          vieram das pistas.</h2><br>
+          <img src="freio.jpg" alt="">
+          <br><h3>Motorização Eficiente</h3>
+          <h2><br>Os motores usados na Fórmula 1 são muito 
           exigidos e precisam trabalhar em altas temperaturas. Para não terem problemas no funcionamento, 
           precisam usar materiais de alta resistência, como alumínio e titânio. Apesar de o titânio ter um uso 
           mais restrito no carros comuns, o alumínio já é bastante utilizado. Outro recurso originário das pistas 
           é o desenvolvimento dos turbocompressores, que aumentam a eficiência na queima de combustível e vêm se 
           popularizando nos últimos anos. Por fim, se é possível dar a partida no motor do seu carro apenas 
-          apertando um botão em vez de girar a chave na ignição, agradeça à F1.</h2>
+          apertando um botão em vez de girar a chave na ignição, agradeça à F1.</h2><br>
+          <img src="motorf1.webp" alt="">
         </div>
         <div class="coluna3">
             <form action="" method="post">  
-              <h1>Seus Dados</h1>
+              <h1>Nos ajude com seu feedback sobre o conteúdo!</h1>
               <div class="formulario1">
                 <div class="col-3" style="text-align: center;">
                     <h2>Digite seu nome:</h2><input type="text" name="texto" id="texto">
@@ -242,11 +263,14 @@
               </div>
               <div class="formulario3">
                   <div class="col-3" style="text-align: center;">
-                    <h2>Envie uma mensagem:</h2><input type="text" name="texto" id="texto"><br><button type="submit">enviar</button>
+                    <h2>Envie seu feedback:</h2><input type="text" name="texto" id="texto"><br><button type="submit">enviar</button>
                   </div>
               </div>
             </form>
         </div>
 		</header>
+    <footer><br>Otávio Vinícius Lichowski Andriolli - 2º Ano<br>Atividade avaliativa solicitada pelo professor 
+      Elcio, Site com cabecalho, 3 colunas e rodapé.<br><br>
+    </footer>
   </main>
 </body>
