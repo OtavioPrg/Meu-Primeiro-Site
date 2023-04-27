@@ -28,6 +28,21 @@
     100% {
         background-position: 50% 0%;
     }
+    
+    }
+    @keyframes animatebb {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    75% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
     }
     .container{
         display: flex;
@@ -72,7 +87,9 @@
         color: rgb(13, 13, 13);
         list-style-type: none;
         margin: 5px 5px 6px -15px;
-        background-color: rgb(255, 255, 255) !important;
+        background: linear-gradient(to bottom right, red, white, white);
+        background-size: 400% 400%;
+        animation: animatebb 2s ease infinite;
         border: 1.5px solid yellow;
         border-radius: 2px;
     }
