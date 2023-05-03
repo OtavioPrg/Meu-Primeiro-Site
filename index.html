@@ -11,9 +11,38 @@
     @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
     body{
         margin: 0px;
-        background: linear-gradient(to bottom right, whitesmoke, yellow);
+        background: linear-gradient(to bottom right, whitesmoke, rgb(255, 255, 97), whitesmoke);
         width: auto;
         height: 100vh;
+    }
+    @keyframes animateBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    75% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+    
+    }
+    @keyframes animatebb {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    75% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
     }
     .container{
         display: flex;
@@ -56,8 +85,10 @@
         color: rgb(13, 13, 13);
         list-style-type: none;
         margin: 5px 5px 6px -15px;
-        background-color: rgb(255, 255, 255);
-        border: 1.5px solid yellow;
+        background: linear-gradient(to bottom right, rgb(185, 255, 255), white,white);
+        background-size: 400% 400%;
+        animation: animatebb 2s ease infinite;
+        border: 1.5px solid rgb(255, 255, 0);
         border-radius: 2px;
     }
     nav a:hover{
@@ -98,6 +129,8 @@
                         <li><a href="video.html">ㅤAtividade da Aula 11/04/23 - Videoㅤ</a></li>
                         <li><a href="https://otavioprg.github.io/Trabalho-Santos-Ot-vio/">ㅤAtividade Avaliativa p/ 17/04/23ㅤㅤ</a></li>
                         <li><a href="trabalho1904.html">ㅤTrabalho p/ dia 19/04/23ㅤㅤㅤㅤㅤ</a></li>
+                        <li><a href="albumfoto.html">ㅤTrabalho das fotosㅤㅤㅤㅤㅤ</a></li>
+                        <li><a href="imitação.html">ㅤTrabalho Portifólioㅤㅤㅤㅤㅤ</a></li>
                     </nav>
                 </div>
                 <div class="gif"><img src="ferrari.jpg" alt=""></div>
