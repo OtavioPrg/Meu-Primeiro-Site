@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,14 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site imitação - Otávio</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
         body{
-            background:linear-gradient(to left bottom, red, #FF6347, #FF6347, 	#FFA07A);
+            background:linear-gradient(to left bottom, rgb(108, 255, 169), rgb(170, 255, 205) );
             width: auto;
             height: auto;
             margin:0;
         }
+        .cabecalho {
+            margin:0;
+        }
         .div-cabecalho{
-            color: white;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-family: 'poppins';
         }
         .colunas {
             display:flex;
@@ -21,6 +30,7 @@
             justify-content: center;
         }
         .coluna1 {
+            background-color: rgb(108, 255, 169);
             border: 2px solid white;
             color: white;
             border-radius: 5px;
@@ -30,15 +40,28 @@
             box-shadow: 0 0 10px gray;
         }
         .coluna2 {
-            border: 2px solid white;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            align-items: center;
             color: white;
             border-radius: 5px;
             width: 350px;
             height: 450px;
             margin:10px;
+        }
+        .coluna2 img{
+            background-color:rgb(108, 255, 169);
             box-shadow: 0 0 10px gray;
+            border-radius: 100%;
+            border: solid white 2px;
+            width: 150px;
         }
         .coluna3 {
+            text-align: justify;
+            background-color: rgb(108, 255, 169);
             border: 2px solid white;
             color: white;
             border-radius: 5px;
@@ -47,30 +70,57 @@
             margin:5px;
             box-shadow: 0 0 10px gray; 
         }
+        .coluna3 h1{
+            font-family: 'roboto';
+            padding: 15px;
+            font-size: 25px;;
+        }
+        .coluna3 h2{
+            text-align: center;
+            font-family: 'roboto';
+            padding-top: 15px;
+            font-size: 30px;;
+        }
         footer{
+            color: rgb(255, 255, 255);
+            font-family: 'poppins';
+            text-align: center;
+            margin:center;
+        }
+        button{
+            background-color: rgb(108, 255, 169);
             color: white;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
         }
     </style>
 </head>
     <body>
         <div class="cabecalho">
             <div class="div-cabecalho">
-                <h1>Portifólio</h1>
+                <h1>Portifólio - Otávio</h1>
             </div>
             <div class="colunas">
                 <div class="coluna1">
                     Meu
                 </div>
                 <div class="coluna2">
-                    Porti
+                    <img src="perfil.png" alt="">
+                    <button>Ver Perfil</button></a> 
                 </div>
                 <div class="coluna3">
-                    fólio
+                    <h2>Biografia</h2>
+                    <h1>Me chamo Otávio Vinícius Lichowski, gosto bastante de automobilismo e 
+                        aprendendo programação (como da para perceber).</h1>
                 </div>
             </div>
         </div>
         <footer>
-            <h1>contato</h1>
+            <h1>contato: 1232</h1>
         </footer>
     </body>
 </html>
