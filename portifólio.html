@@ -1,0 +1,295 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Atividades - Otávio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+    @keyframes animateBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    75% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+    
+    }
+    @keyframes animatebb {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    75% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+    }
+    @keyframes slide-in1 {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+@keyframes slide-in2 {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+@keyframes slide-in3 {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+@keyframes slide-cabecalho {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+@keyframes slide-rodape {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+    body{
+        background:linear-gradient(to left bottom, #00b4d8, #caf0f8);
+        width: auto;
+        height: 100vh;
+        margin:0;
+    }
+    .cabecalho {
+        margin:0;
+    }
+    .div-cabecalho{
+        color: white;
+        text-align: center;
+        font-family: 'poppins';
+    }
+    .colunas {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .coluna1 {
+        background-color:#caf0f8;
+        border: 2px solid white;
+        color: white;
+        border-radius: 5px;
+        width: 350px;
+        height: auto;
+        margin:5px;
+        box-shadow: 0 0 10px gray;
+    }
+    nav li{
+    list-style-type: none;
+    margin: 5px 5px 6px 5px;
+    background-color: white !important;
+    border: 0px solid rgb(15, 15, 15);
+    border-radius: 5px;
+    border-color: rgb(8, 8, 8);
+    cursor: grab;
+    }
+    nav a{
+    font-family: 'roboto';
+    border-radius: 3px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: grab;
+    }
+    nav li:hover{
+        color: rgb(13, 13, 13);
+        list-style-type: none;
+        margin: 5px 5px 6px 5px;
+        background: linear-gradient(to bottom right, #00b4d8, #caf0f8, #caf0f8);
+        background-size: 400% 400%;
+        animation: animatebb 2s ease infinite;
+        border: 0px solid #03045e !important;
+        border-radius: 3px;
+    }
+    nav a:hover{
+        color:black;
+        border-radius: 3px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .coluna2 {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 5px;
+        width: 350px;
+        height: 450px;
+        margin:10px;
+    }
+    .coluna2 img{
+        background-color:#caf0f8;
+        margin-bottom: 10px;
+        box-shadow: 0 0 10px gray;
+        border-radius: 100%;
+        border: solid white 2px;
+        width: 150px;
+    }
+    .coluna3 {
+        text-align: justify;
+        background-color: #caf0f8;
+        border: 2px solid white;
+        color: black;
+        border-radius: 5px;
+        width: 350px;
+        height: auto;
+        margin:5px;
+        box-shadow: 0 0 10px gray;
+    }
+    .coluna3 h1{
+        font-family: 'roboto';
+        padding-left:15px;
+        padding-right:15px;
+        font-size: 25px;;
+    }
+    .coluna3 h2{
+        text-align: center;
+        font-family: 'roboto';
+        padding-top: 5px;
+        font-size: 25px;;
+    }
+    footer{
+        color: rgb(255, 255, 255);
+        font-family: 'poppins';
+        text-align: center;
+        margin:center;
+    }
+    button{
+        background-color: #caf0f8;
+        color: black;
+        padding: auto;
+        margin-top: 10px;
+        border: 2px solid white;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+        font-size: 15px;
+        font-family: 'poppins';
+    }
+    .coluna2 li {
+        list-style-type: none;
+        margin: 5px 5px 6px 5px;
+        background-color: #caf0f8;
+        border: 2px solid white;
+        border-radius: 5px;
+    }
+    .coluna2 li a{
+        font-family: 'roboto';
+        border-radius: 3px;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        cursor: grab;
+    }
+    .coluna2 li:hover{
+        color: rgb(13, 13, 13);
+        list-style-type: none;
+        margin: 5px 5px 6px 5px;
+        background: linear-gradient(to bottom right, #0077b6, #caf0f8, #caf0f8);
+        background-size: 400% 400%;
+        border: 2px solid white;
+        border-radius: 3px;
+    }
+    .coluna2 a:hover{
+        color:black;
+        border-radius: 3px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    </style>
+        <script>
+        function exibirDiv() {
+            var divColuna1 = document.getElementById("coluna1");
+            divColuna1.style.display = "block";
+
+            divColuna1.addEventListener("mouseleave", function(event) {
+                if (!event.relatedTarget || !divColuna1.contains(event.relatedTarget)) {
+                    divColuna1.style.display = "none";
+                }
+            });
+        }
+        
+        function ocultarDiv(event) {
+            var divColuna1 = document.getElementById("coluna1");
+            if (!event.relatedTarget || !divColuna1.contains(event.relatedTarget)) {
+                divColuna1.style.display = "none";
+            }
+        }
+    </script>
+</head>
+    <body>
+        <div class="cabecalho">
+            <div class="div-cabecalho">
+                <h1>Portifólio e lista de Atividades - Otávio</h1>
+            </div>
+            <div class="colunas">
+                <div class="coluna2">
+                        <img src="perfil.png" alt="">
+                        <li><a href="imitação.php">ㅤVer Perfilㅤ</a></li>
+                        <button onmouseover="exibirDiv()" onmouseleave="ocultarDiv(event)">Minhas Atividades</button><br>
+                    <div class="coluna1" id="coluna1" style="display: none;">
+                        <nav>
+                            <li><a href="aula03_04.html">ㅤAtividade da Aula 03/04/23</a></li>
+                            <li><a href="aula04_04.html">ㅤAtividade da Aula 04/04/23</a></li>
+                            <li><a href="video.html">ㅤAtividade da Aula 11/04/23</a></li>
+                            <li><a href="https://otavioprg.github.io/Trabalho-Santos-Ot-vio/">ㅤAtividade Avaliativa p/ 17/04/23ㅤ</a></li>
+                            <li><a href="trabalho1904.html">ㅤTrabalho p/ dia 19/04/23</a></li>
+                            <li><a href="albumfoto.html">ㅤTrabalho das fotosㅤㅤㅤㅤㅤ</a></li>
+                            <li><a href="imitação.html">ㅤTrabalho Portifólioㅤㅤㅤㅤㅤ</a></li>
+                            <li><a href="conexao.html">ㅤTrabalho conexaoㅤㅤㅤㅤㅤ</a></li>
+                        </nav>
+                    </div>
+                </div>
+                <div class="coluna3">
+                    <h2>Sobre Mim</h2>
+                    <h1>Me chamo Otávio Vinícius Lichowski, eu gosto bastante de automobilismo e 
+                        aprendendo programação (como da para perceber).</h1>
+                </div>
+            </div>
+        <footer>
+            <h1>contato: andriolliotavio@gmail.com</h1>
+        </footer>
+    </body>
+</html>
